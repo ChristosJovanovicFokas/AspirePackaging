@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Image Buttons</title>
+    	<style>
+        	.image-button {
+            		border: none;
+            		background: none;
+            		cursor: pointer;
+        	}
+		canvas {
+			display: block;
+			margin-top: 20px;
+		}
+    	</style>
+</head>
+<body>
+	<button id="box1" class="image-button">
+		<img src=" " alt ="Button 1"/>
+	</button>
+
+	<button id="box2" class="image-button">
+                <img src=" " alt ="Button 2"/>
+        </button>
+
+	<button id="box3" class="image-button">
+                <img src=" " alt ="Button 3"/>
+        </button>
+
+	<form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="fileUpload">Choose a Texture:</label>
+        <input type="file" id="fileUpload" name="file" accept="application/pdf, image/*" required>
+        <br><br>
+    </form>
+
+	<canvas id="canvas"></canvas>
+	<script type="module" src="3Dscript.js"></script>
+</body>
+</html>

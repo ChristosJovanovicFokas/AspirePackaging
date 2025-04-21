@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Customization</title>
+	<link rel="stylesheet" href="../CSS/customize.css">
+	<link rel="stylesheet" href="../CSS/globalHeader.css">
+	<script src="../JS/customeBoxes.js" defer></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="customization-wrapper">
+		<h1>Step-One: Pick Packaging</h1>
+		<div class="boxes">
+			<button><img src="black.jpg" alt="Box 1"></button>
+			<button><img src="black.jpg" alt="Box 2"></button>
+			<button><img src="black.jpg" alt="Box 3"></button>
+			<button><img src="black.jpg" alt="Box 4"></button>
+			<button><img src="black.jpg" alt="Box 5"></button>
+			<button><img src="black.jpg" alt="Box 6"></button>
+			<button><img src="black.jpg" alt="Box 7"></button>
+			<button><img src="black.jpg" alt="Box 8"></button>
+			<button><img src="black.jpg" alt="Box 9"></button>
+			<button><img src="black.jpg" alt="Box 10"></button>
+		</div>
+	</div>
+	<h1>Step-Two: Change color or add picture for design</h1>
+	<div class="box-design">
+		<div class="basicColorDesign">
+			<button style="background-color: black;"></button>
+			<button style="background-color: black;"></button>
+			<button style="background-color: black;"></button>
+			<button style="background-color: black;"></button>
+			<button style="background-color: black;"></button>
+			<button style="background-color: black;"></button>
+			<button style="background-color: black;"></button>
+			<button style="background-color: black;"></button>
+			<button style="background-color: black;"></button>
+			<button style="background-color: black;"></button>
+		</div>
+		<div class="andOrDesign">
+			<h3> AND/OR </h3>
+			<div class="image-option">
+				<label for="fileUpload">Choose a Texture:</label>
+					<input type="file" id="fileUpload" name="file" accept="application/pdf, image/*" required> 
+			</div>
+		</div>
+		<div class="addLogo">
+			<h1>Step-Three: Choose Logo</h1>
+			<div class="logo-option">
+				<label for="fileUpload">Choose your Logo:</label>
+					<input type="file" id="fileUpload" name="file" accept="application/pdf, image/*" required> 
+			</div>
+		</div>
+		<div class="quote-wrapper">
+			<h1>Step-Four: Get a quote<h1>
+			
+			
+			<div class="quote-button">
+				<button id="openQuote">Get a quote</button>
+				
+				<div id="quoteModal" class="quote-modal">
+					<div class="quote-content">
+						<span class="close-quote">&times;</span>
+						<form action="https://formspree.io/f/your-form-id" method="POST">
+							<h2>Get Quote</h2>
+							<input type="text" name="name" required>
+							<input type="email" name="email" required>
+							<textarea name="message" required></textarea>
+							<button type="submit">Send</button>
+						</form>
+					</div>
+				</div> 
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		fetch('globalHeader.html')
+		  .then(res => res.text())
+		  .then(data => {
+			document.getElementById('header').innerHTML = data;
+		  });
+	  </script>
+</body>
+</html>

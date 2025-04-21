@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lan='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products section</title>
+	<link rel="stylesheet" href="CSS/products.css">
+	<script src="/JS/products.js" defer></script>
+
+</head>
+<body>
+	<div class="sections">
+		<div class="product-wrapper">
+			<div class="title" style="margin-top: 200px;"><h1>Products</h1></div>
+			<div class="gallery-photos">
+				<div class="always-visible">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+				</div>
+				<div class="see-more-photos hidden">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+					<img src="black.jpg" alt="Gallery Image" onclick="openLightbox(this)">
+				</div>
+				<button id="seeMoreBtn" class="see-more-btn" onclick="toggleMoreImages()">See-More</button>
+			</div>
+			<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+				<span class="close">&times;</span>
+				<img id="lightbox-img" src="" alt="Zoomed Image">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

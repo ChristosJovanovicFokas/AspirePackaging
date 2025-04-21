@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDF or Photo</title>
+</head>
+<body>
+    <h1>Upload a PDF or a Photo</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="fileUpload">Choose a PDF or a Photo:</label>
+        <input type="file" id="fileUpload" name="file" accept="application/pdf, image/*" required>
+        <br><br>
+    </form>
+	<h3>Image Preview:</h3>
+	<img id="preview" alt="Image Preview" style="display:none; width: 300px;"/>
+	<h4>Canvas Edge Detection</h4>
+	<canvas id="edge" width="300" height="300" style="border:1px solid #000000;"></canvas>
+	<script src="script.js"></script>	
+		
+	<canvas id="canvas"></canvas>
+
+	<script type="module" src="3Dscript.js"></script> 
+
+</body>
+</html>
+

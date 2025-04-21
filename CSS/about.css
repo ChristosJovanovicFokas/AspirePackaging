@@ -1,0 +1,48 @@
+.about-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+	object-fit: contain;
+	width: 100%;
+	max-width: 1200px;
+	padding: 2rem;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+
+
+.about-image,
+.about-content {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+.about-content {
+	text-align: center;
+	z-index: 4;
+
+	font-size: 20px;
+	line-height: 1.6;
+
+	font-family: sans-serif; 
+	white-space: nowrap;
+	
+}
+
+.about-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+	max-width: 300px;
+    height: auto;
+	object-fit: contain;
+    
+	z-index: 2;
+    opacity: 0.8;
+}

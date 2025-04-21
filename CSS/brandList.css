@@ -1,0 +1,23 @@
+.brand-photos {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  
+  .brand-photos img{
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .brand-photos img:hover {
+    transform: scale(1.5);
+  }
+
+  @media(max-width: 900px) {
+    .brand-photos{
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+
+  }

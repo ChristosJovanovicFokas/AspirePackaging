@@ -1,0 +1,20 @@
+{
+  "name": "3d_graphics",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "3D_env.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "three": "^0.173.0"
+  }
+}

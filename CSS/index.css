@@ -1,0 +1,23 @@
+
+.navbar-wrapper {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border: 5px solid black;
+    z-index: 997;
+    top: 0;
+    min-width: 400px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+

@@ -1,6 +1,5 @@
 
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.esm.browser.min.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("slider.js loaded");

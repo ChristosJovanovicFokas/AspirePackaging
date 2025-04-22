@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
-  margin-top: 6%;
+  margin: 10%;
+  background-color: white;
 }
 
 .swiper-slide {
@@ -30,7 +31,7 @@
 @media (max-width: 900px) {
   .swiper{
     height: 45vh;
-    margin-top: 30%;
+    margin-top: 18%;
   }
   
 }

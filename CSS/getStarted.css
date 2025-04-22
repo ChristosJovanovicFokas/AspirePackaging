@@ -1,0 +1,33 @@
+.get-started-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+}
+
+.get-started-content img{
+    width: 100%;
+}
+
+.get-started-btn {
+    cursor: pointer;
+    margin: auto;
+    background-color: #bb1e44;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transform: translateY(-100px);
+}
+
+.get-started-btn a {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .get-started-btn {
+        transform: translateY(1px);
+    }
+}

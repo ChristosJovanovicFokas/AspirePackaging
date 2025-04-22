@@ -19,7 +19,7 @@
 @media (max-width: 900px) {
     .about-ext-wrapper {
       grid-template-columns: repeat(2, minmax(100px, 1fr));
-      transform: translateY(-400px);
+      transform: translateY(-150px);
     }
   
   }

@@ -10,73 +10,87 @@
 </head>
 <body>
 	<div id="header"></div>
-	<div class="customization-wrapper">
-		<h1>Step-One: Pick Packaging</h1>
-		<div class="boxes">
-			<button><img src="black.jpg" alt="Box 1"></button>
-			<button><img src="black.jpg" alt="Box 2"></button>
-			<button><img src="black.jpg" alt="Box 3"></button>
-			<button><img src="black.jpg" alt="Box 4"></button>
-			<button><img src="black.jpg" alt="Box 5"></button>
-			<button><img src="black.jpg" alt="Box 6"></button>
-			<button><img src="black.jpg" alt="Box 7"></button>
-			<button><img src="black.jpg" alt="Box 8"></button>
-			<button><img src="black.jpg" alt="Box 9"></button>
-			<button><img src="black.jpg" alt="Box 10"></button>
-		</div>
-	</div>
-	<h1>Step-Two: Change color or add picture for design</h1>
-	<div class="box-design">
-		<div class="basicColorDesign">
-			<button style="background-color: black;"></button>
-			<button style="background-color: black;"></button>
-			<button style="background-color: black;"></button>
-			<button style="background-color: black;"></button>
-			<button style="background-color: black;"></button>
-			<button style="background-color: black;"></button>
-			<button style="background-color: black;"></button>
-			<button style="background-color: black;"></button>
-			<button style="background-color: black;"></button>
-			<button style="background-color: black;"></button>
-		</div>
-		<div class="andOrDesign">
-			<h3> AND/OR </h3>
-			<div class="image-option">
+	<form action="https://formspree.io/f/myzwgojj" method="POST">
+		<div class="customization-wrapper">
+			<h1>Step-One: Pick Packaging</h1>
+			<div class="boxes">
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectAppetizerBox.jpg" alt="Design 1" width="100">
+				</label>
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectBags6.jpg" alt="Design 1" width="100">
+				</label>
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectBurgerBox.jpg" alt="Design 1" width="100">
+				</label>
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectCarryOutBox.jpg" alt="Design 1" width="100">
+				</label>
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectCateringBox.jpg" alt="Design 1" width="100">
+				</label>
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectClubBox.jpg" alt="Design 1" width="100">
+				</label>
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectLgSandBox.jpg" alt="Design 1" width="100">
+				</label>
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectPartyPizza.jpg" alt="Design 1" width="100">
+				</label>
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectPizzaBox3.jpg" alt="Design 1" width="100">
+				</label>
+				<label>
+					<input type="checkbox" name="product" value="design1">
+					<img src="../images/custom_boxes/SelectSoupCups2.jpg" alt="Design 1" width="100">
+				</label>				
+			</div>
+			<div class="quantity">
+				<label>
+					Enter Approximate Quantity per week:
+					<input type="text" name="quantity" required>
+				</label>
+			</div>
+			<div class="design">
+				<h1>Step-Two: Add your design</h1>
 				<label for="fileUpload">Choose a Texture:</label>
 					<input type="file" id="fileUpload" name="file" accept="application/pdf, image/*" required> 
 			</div>
-		</div>
-		<div class="addLogo">
-			<h1>Step-Three: Choose Logo</h1>
 			<div class="logo-option">
+				<h1>Step-Three: Choose Logo</h1>
 				<label for="fileUpload">Choose your Logo:</label>
 					<input type="file" id="fileUpload" name="file" accept="application/pdf, image/*" required> 
 			</div>
-		</div>
-		<div class="quote-wrapper">
-			<h1>Step-Four: Get a quote<h1>
-			
-			
+			<div class="per-info">
+				<h1>Step-Four: Personal Information</h1>
+				<label> 
+					<h3 style="color: black;">Name:</h3>
+					<input type="text" name="name" required>
+				</label>
+				<label>
+					<h3 style="color: black;">Email:</h3>
+					<input type="email" name="email" required>
+				</label>
+				<label>
+					<h3 style="color: black;">Company name (Optional):</h3>
+					<input type="text" name="company-name">
+				</label>
+			</div>
 			<div class="quote-button">
-				<button id="openQuote">Get a quote</button>
-				
-				<div id="quoteModal" class="quote-modal">
-					<div class="quote-content">
-						<span class="close-quote">&times;</span>
-						<form action="https://formspree.io/f/your-form-id" method="POST">
-							<h2>Get Quote</h2>
-							<input type="text" name="name" required>
-							<input type="email" name="email" required>
-							<textarea name="message" required></textarea>
-							<button type="submit">Send</button>
-						</form>
-					</div>
-				</div> 
+				<button type="submit">Send Request</button>
 			</div>
-			</div>
-			</div>
-		</div>
-	</div>
+		</div>			
+	</form>
 	<script>
 		fetch('globalHeader.html')
 		  .then(res => res.text())

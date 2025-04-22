@@ -5,6 +5,15 @@
     width: 100%;
 }
 
+.get-started-wrapper h1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #bb1e44;
+    transform: translateY(80px);
+}
+
 .get-started-content img{
     width: 100%;
 }

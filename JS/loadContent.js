@@ -72,4 +72,12 @@ document.addEventListener("DOMContentLoaded", function() {
         })     
                 .catch(error => console.error("Error Loading globalHeader.html:", error));
         });
+document.addEventListener("DOMContentLoaded", function() {
+        fetch("HTML/aboutExtension.html") //Fetch html file
+        .then(response => response.text())
+        .then(data => {
+                document.getElementById("about-extension-container").innerHTML = data;
+        })     
+                .catch(error => console.error("Error Loading globalHeader.html:", error));
+        });
 

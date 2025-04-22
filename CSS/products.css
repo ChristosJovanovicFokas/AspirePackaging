@@ -1,16 +1,21 @@
+.product-wrapper {
+  transform: translateY(-400px);
+}
+
 .title {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+  color: #bb1e44;
 }
 
 .gallery-photos {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr;
-  max-width: 100%;
+  width: 100%;
   margin: auto;
 }
 
@@ -43,6 +48,12 @@
   width: 30%;
   cursor: pointer;
   margin: auto;
+  background-color: #bb1e44;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
 }
 
 .hidden {
@@ -82,5 +93,9 @@
 
   .see-more-photos {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+
+  .product-wrapper {
+    transform: translateY(-300px);
   }
 }

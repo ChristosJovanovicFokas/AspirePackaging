@@ -1,0 +1,25 @@
+.about-ext-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+    transform: translateY(-600px);
+}
+
+.about-ext-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.about-ext-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .about-ext-wrapper {
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+      transform: translateY(-400px);
+    }
+  
+  }

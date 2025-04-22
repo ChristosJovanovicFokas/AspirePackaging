@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
-  padding: 40px 0;
   margin-top: 6%;
 }
 
@@ -18,7 +17,7 @@
 
 .swiper-slide-active{
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .swiper-slide img {
@@ -32,7 +31,6 @@
   .swiper{
     height: 45vh;
     margin-top: 30%;
-    margin-bottom: 20%;
   }
   
 }

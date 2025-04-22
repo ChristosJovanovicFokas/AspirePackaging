@@ -35,7 +35,12 @@
 }
 
 .footer-socialmedia button {
-
+    background-color: #bb1e44;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
 }
 
 .footer-right {
@@ -50,7 +55,12 @@
 }
 
 .footer-contact {
-    
+    background-color: #bb1e44;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
 }
 
 .contact {
@@ -60,6 +70,13 @@
 
 .contact button{
     border-radius: 8px;
+    background-color: white;
+    color: #bb1e44;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .contact-modal {

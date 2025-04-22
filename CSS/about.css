@@ -4,24 +4,45 @@
 	align-items: center;
 	object-fit: contain;
 	width: 100%;
-	margin-top: 5%;
+	transform: translateY(-10%);
 }
 
 .about-content {
 	width: 100%;
 	z-index: 4;
-	font-size: 20px;
+	font-size: 30px;
 	line-height: 1.6;
 	text-align: center;	
 }
 
 .about-image{
 	width: 100%;
+	transform: translateX(-120%);
+}
+
+.about-content p{
+	font-size: 16px;
 }
 
 .about-image img {
-	width: 150%;
+	width: 170%;
 	z-index: 2;
-    opacity: 0.6;
-	transform: translateX(-20%);
+    opacity: 0.5;
+	object-fit: contain;
+	transform: rotate(90deg);
+}
+
+@media (max-width:900px) {
+	.about-content{
+		font-size: 20px;
+		margin-top: 0;
+	}
+
+	.about-content p{
+		font-size: 15px;
+	}
+
+	.about-image {
+		width: 200%;
+	}
 }

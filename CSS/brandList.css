@@ -12,7 +12,7 @@
   }
   
   .brand-photos img:hover {
-    transform: scale(1.5);
+    transform: scale(1.02);
   }
 
   @media(max-width: 900px) {

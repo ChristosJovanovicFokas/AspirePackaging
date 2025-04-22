@@ -3,9 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   padding: 40px 0;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 
 .swiper-slide {

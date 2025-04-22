@@ -3,32 +3,24 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 70px;
-	padding: 30px;
-
+	gap: 10vh;
 }
 
 
-.nav-left, .nav-right {
-	display: flex;
+.nav-wrapper ul {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	place-items: center;
 	list-style-type: none;
+	gap: 2%;
 	padding: 0;
 	margin: 0;
-	gap: 40px;
-	margin-left: 20px;
-	margin-top: 0px;
-}
-
-
-.nav-wrapper li {	
-	white-space: nowrap;
 }
 
 .nav-wrapper li a {
-
  	color: black;
 	font-size: 16px;
-	padding: 10px;
+	margin-top: 0px;
 	font-family: sans-serif;  
   	text-decoration: none;
 }
@@ -39,9 +31,6 @@ a:hover {
 }
 
 .logo {
-	position: absolute;
-	left: 49.4%;
-	transform: translateX(-45%);
 	width: 50px;
 	margin-top: 0;
 }

@@ -1,15 +1,14 @@
 .swiper {
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 100vh;
   padding: 40px 0;
   margin-top: 5%;
 }
 
 .swiper-slide {
-  width: 33%; /* controls width of each card */
   opacity: 0.7;
   transform: scale(0.9);
   border-radius: 16px;
@@ -29,10 +28,11 @@
   display: block;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .swiper{
     height: 45vh;
     margin-top: 30%;
     margin-bottom: 20%;
   }
+  
 }

@@ -1,3 +1,11 @@
+.title {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
 .gallery-photos {
   display: grid;
   gap: 10px;

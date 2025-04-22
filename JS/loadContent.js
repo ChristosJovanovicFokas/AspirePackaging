@@ -8,15 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 document.addEventListener("DOMContentLoaded", function() {
-        fetch("HTML/slider.html") //Fetch html file
-        .then(response => response.text())
-        .then(data => {
-                document.getElementById("slider-container").innerHTML = data;
-        })
-                .catch(error => console.error("Error Loading globalHeader.html:", error));
-        });
-
-document.addEventListener("DOMContentLoaded", function() {
         fetch("HTML/about.html") //Fetch html file
         .then(response => response.text())
         .then(data => {
